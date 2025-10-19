@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TugasOnsite</title>
+  </head>
+  <body style="text-align: center; font-family: Arial">
+    <h1 id="judul">Hallo Dunia</h1>
+    <button id="klikSaya">klik untuk mengubah</button>
+    <p id="pesan">klik tombol</p>
+    <script>
+      const tombol = document.getElementById("klikSaya");
+      const pesan = document.getElementById("pesan");
+
+      tombol.addEventListener("click", function () {
+        pesan.textContent = "Tombol Sudah di klik";
+        document.getElementById("judul").style.color = "red";
+      });
+    </script>
+  </body>
+</html>
